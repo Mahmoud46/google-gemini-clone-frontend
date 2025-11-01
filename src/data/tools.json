@@ -1,0 +1,44 @@
+{
+	"tools": [
+		{
+			"name": "Write",
+			"acronym": "Canvas",
+			"suggestions": [
+				"Write an email to my neighbors about a block party",
+				"Write a thank you note for a job interview",
+				"Write a summary of the book Catch-22 for kids",
+				"Write a shopping list for taco tuesday"
+			]
+		},
+		{
+			"name": "Build",
+			"acronym": "Canvas",
+			"suggestions": [
+				"Build a fireworks generator",
+				"Build a weekly workout routine ",
+				"Build an asteroid shooter game ",
+				"Make a website for my photography portfolio"
+			]
+		},
+		{
+			"name": "Deep Research",
+			"acronym": "Deep Research",
+			"suggestions": [
+				"Research and plan a trip to Japan for foodies",
+				"Research health benefits of cold plunges",
+				"Research most affordable family cell phone plans",
+				"Research best daycare centers in Mexico City"
+			]
+		},
+		{
+			"name": "Learn",
+			"acronym": "Guided Learning",
+			"suggestions": [
+				"Walk me through how to solve a tricky math problem",
+				"Brainstorm ideas for a short story I'm trying to write",
+				"Practice questions for my history test on the American Revolution",
+				"Review my writing for the opening page of a short story I'm working on"
+			]
+		}
+	]
+}
