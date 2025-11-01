@@ -28,7 +28,11 @@ export default function Message({ message }: { message: IMessage }): ReactNode {
 								: ""
 						}
 					>
-						<div className="wrap-break-word">
+						<div
+							className={`wrap-break-word ${
+								message.participant == "model" ? "max-w-[600px]" : ""
+							}`}
+						>
 							<MarkdownRenderer content={message.content} />
 						</div>
 
