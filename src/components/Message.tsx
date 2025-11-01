@@ -11,7 +11,7 @@ export default function Message({ message }: { message: IMessage }): ReactNode {
 			className={`${
 				message.participant == "user"
 					? "bg-[#282a2c]/80 rounded-3xl max-w-[400px] rounded-tr-none p-4 self-end"
-					: "self-start flex gap-4 max-w-[600px] wrap-break-word"
+					: "self-start flex gap-4 max-w-[600px]"
 			}`}
 		>
 			{
@@ -28,7 +28,7 @@ export default function Message({ message }: { message: IMessage }): ReactNode {
 								: ""
 						}
 					>
-						<div className="">
+						<div className="wrap-break-word">
 							<MarkdownRenderer content={message.content} />
 						</div>
 
