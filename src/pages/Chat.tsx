@@ -41,7 +41,7 @@ export default function Chat(): ReactNode {
 														<SiGooglegemini />
 													</div>
 												</div>
-												<div className="">
+												<div className="markdown-body">
 													<MarkdownRenderer content={modelReponse} />
 												</div>
 											</div>

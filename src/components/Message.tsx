@@ -20,7 +20,7 @@ function ModelMessage({ message }: { message: IMessage }): ReactNode {
 				<SiGooglegemini />
 			</div>
 			<div className="text-white/90 flex flex-col gap-4">
-				<div className={`wrap-break-word max-w-[600px]`}>
+				<div className={`wrap-break-word max-w-[600px] markdown-body`}>
 					<MarkdownAdvanced content={message.content} />
 				</div>
 				<div className="flex items-center">
