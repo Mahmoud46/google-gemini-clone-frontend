@@ -10,7 +10,7 @@ export default function Home() {
 		<>
 			<section
 				className={`flex pb-4 pr-8 transition-all duration-300 ${
-					isMenuOpen ? "pl-[310px]" : "pl-20"
+					isMenuOpen ? "md:pl-[310px]" : "md:pl-20"
 				} text-white`}
 			>
 				<div className="flex w-full">

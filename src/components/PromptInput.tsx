@@ -68,7 +68,7 @@ export default function PromptInput({ chatID }: { chatID?: string }) {
 	return (
 		<footer
 			className={`p-4 sticky bottom-0 transition-all duration-300 z-20 bg-[#1b1c1d]/50 backdrop-blur-sm ${
-				isMenuOpen ? "pl-[310px]" : "pl-20"
+				isMenuOpen ? "md:pl-[310px]" : "md:pl-20"
 			} flex justify-center items-center w-full flex-col gap-4 ${
 				isResponseLoading ? "pointer-events-none" : ""
 			}`}

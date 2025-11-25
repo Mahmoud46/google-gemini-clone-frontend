@@ -45,7 +45,7 @@ export default function ChatCard({ chat }: { chat: IChat }): ReactNode {
 				{chat.title}
 			</Link>
 			<div
-				className={`flex-none text-lg transition-all duration-300 opacity-0 group-hover:opacity-100 ${
+				className={`flex-none text-lg transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100 ${
 					optionsOpen ? "bg-white/15 opacity-100" : "hover:bg-white/15"
 				} rounded-full p-1`}
 				onClick={() => setOptionsMenu((prev) => !prev)}

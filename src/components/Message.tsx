@@ -7,7 +7,7 @@ import MarkdownAdvanced from "../libs/MarkdownRenderer";
 
 function UserMessage({ message }: { message: IMessage }): ReactNode {
 	return (
-		<div className="bg-[#282a2c]/80 rounded-3xl max-w-[400px] rounded-tr-none p-4 self-end">
+		<div className="bg-[#282a2c]/80 rounded-3xl max-w-[270px] md:max-w-[400px] rounded-tr-none p-4 self-end">
 			{message.content}
 		</div>
 	);
@@ -15,12 +15,14 @@ function UserMessage({ message }: { message: IMessage }): ReactNode {
 
 function ModelMessage({ message }: { message: IMessage }): ReactNode {
 	return (
-		<div className="self-start flex gap-4 max-w-[600px]">
+		<div className="self-start flex items-start gap-4 max-w-[300px] md:max-w-[600px]">
 			<div className="text-3xl text-blue-500">
 				<SiGooglegemini />
 			</div>
 			<div className="text-white/90 flex flex-col gap-4">
-				<div className={`wrap-break-word max-w-[600px] markdown-body`}>
+				<div
+					className={`wrap-break-word w-full max-w-[300px] md:max-w-[600px] markdown-body`}
+				>
 					<MarkdownAdvanced content={message.content} />
 				</div>
 				<div className="flex items-center">

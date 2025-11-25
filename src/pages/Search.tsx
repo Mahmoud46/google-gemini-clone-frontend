@@ -27,14 +27,14 @@ export default function Search(): ReactNode {
 	return (
 		<section
 			className={`flex pb-4 pr-8 transition-all duration-300 ${
-				isMenuOpen ? "pl-[310px]" : "pl-20"
+				isMenuOpen ? "md:pl-[310px]" : "md:pl-20"
 			} text-white`}
 		>
 			<div className="flex w-full">
 				<div className="flex items-center justify-center w-full">
-					<div className="max-w-[650px] flex flex-col gap-8">
+					<div className="max-w-[300px] md:max-w-[650px] flex flex-col gap-8">
 						<h1 className="text-3xl">Search</h1>
-						<div className="flex items-center border-white/50 border gap-3 pl-2.5 rounded-full w-[600px]">
+						<div className="flex items-center border-white/50 border gap-3 pl-2.5 rounded-full max-w-[300px] md:w-[600px]">
 							<LuSearch className="text-lg opacity-80" />
 							<input
 								value={search}

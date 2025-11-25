@@ -100,8 +100,8 @@ export default function Sidebar(): ReactNode {
 
 	return (
 		<div
-			className={`fixed top-0 z-30 bg-[#282a2c]/40 backdrop-blur-sm p-4 h-dvh flex flex-col gap-8 ${
-				isMenuOpen ? "w-[300px]" : "w-[70px]"
+			className={`fixed top-0 z-30 bg-[#282a2c]/40 backdrop-blur-sm p-0 md:p-4 h-dvh flex flex-col gap-8 ${
+				isMenuOpen ? "p-4 w-[300px]" : "w-[0px] md:w-[70px]"
 			} overflow-hidden transition-all duration-300 flex flex-col`}
 		>
 			<MenuSearch />

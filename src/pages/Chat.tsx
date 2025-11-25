@@ -17,8 +17,8 @@ export default function Chat(): ReactNode {
 			{chatsController.includes(id as string) && (
 				<>
 					<section
-						className={`flex pb-4 pr-8 transition-all duration-300 ${
-							isMenuOpen ? "pl-[310px]" : "pl-20"
+						className={`flex pb-4 pr-2 md:pr-8 transition-all duration-300 ${
+							isMenuOpen ? "pl-2 md:pl-[310px]" : "pl-2 md:pl-20"
 						} text-white`}
 					>
 						<div className="flex w-full">

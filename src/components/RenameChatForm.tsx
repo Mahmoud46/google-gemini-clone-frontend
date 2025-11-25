@@ -32,7 +32,7 @@ export default function RenameChatForm(): ReactNode {
 			{renamedChat && (
 				<div className="fixed w-full h-full bg-black/10 backdrop-blur-sm top-0 z-50 flex items-center justify-center">
 					<div
-						className="bg-[#282a2c]/40 text-white p-4 rounded-2xl min-w-[450px] flex flex-col gap-8"
+						className="bg-[#282a2c]/40 text-white p-4 rounded-2xl min-w-[330px] md:min-w-[450px] flex flex-col gap-8"
 						ref={formRef}
 					>
 						<h1 className="text-2xl">Rename this chat</h1>
