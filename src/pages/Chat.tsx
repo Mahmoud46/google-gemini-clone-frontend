@@ -31,7 +31,7 @@ export default function Chat(): ReactNode {
 												<Message message={message} key={i} />
 											))}
 										{isResponseLoading && (
-											<div className="flex gap-4 items-start">
+											<div className="flex gap-4 items-start max-w-[300px] md:max-w-[600px]">
 												<div className="relative">
 													<LuLoaderCircle
 														className="text-5xl absolute top-1/2 left-1/2 -translate-1/2 animate-spin text-cyan-400"
@@ -41,7 +41,7 @@ export default function Chat(): ReactNode {
 														<SiGooglegemini />
 													</div>
 												</div>
-												<div className="markdown-body">
+												<div className="markdown-body wrap-break-word w-full max-w-[300px] md:max-w-[600px]">
 													<MarkdownRenderer content={modelReponse} />
 												</div>
 											</div>
