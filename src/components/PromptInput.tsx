@@ -99,7 +99,7 @@ export default function PromptInput({ chatID }: { chatID?: string }) {
 							className={`text-sm text-white/80 cursor-pointer transition-all duration-300 hover:bg-white/10 pr-1 rounded-full flex-none`}
 						>
 							<select className="p-2.5 cursor-pointer outline-0">
-								<option value="2.5 Flash">2.0 Flash</option>
+								<option value="2.5 Flash">2.5 Flash</option>
 							</select>
 						</div>
 						{prompt.trim() == "" && !isResponseLoading && (
