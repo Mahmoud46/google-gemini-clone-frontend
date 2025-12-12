@@ -39,7 +39,6 @@ export default function ContextProvider({
 			).error.message;
 
 			if (sentence) response += sentence;
-
 			setModelReponse(response);
 		}
 
