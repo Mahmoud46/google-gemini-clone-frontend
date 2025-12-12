@@ -28,14 +28,22 @@ export default function ContextProvider({
 		try {
 			for await (const chunk of runChat(chatHistory)) {
 				response += chunk;
-				console.log(chunk);
 				setModelReponse(response);
 			}
 		} catch (error) {
 			response += "\n";
 			response += "\n";
-			response += "## The model is overloaded. Please try again later.";
-			console.log(error);
+
+			if (error instanceof Error && error.message.includes("429")) {
+				const err = JSON.parse(error.message);
+				if (err.error && err.error.message) {
+					const errRecursive = JSON.parse(err.error.message);
+					response += errRecursive.error.message;
+				}
+			} else {
+				response += "## The model is overloaded. Please try again later.";
+			}
+
 			setModelReponse(response);
 		}
 
