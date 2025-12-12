@@ -15,7 +15,7 @@ async function* runChat(promptHistory: IPartMessage[]): AsyncGenerator<string> {
 		responseMimeType: "text/plain",
 	};
 
-	const model = "gemini-2.0-flash";
+	const model = "gemini-2.5-flash";
 
 	const contents = promptHistory;
 
