@@ -31,14 +31,11 @@ export default function ContextProvider({
 				console.log(chunk);
 				setModelReponse(response);
 			}
-		} catch (error: unknown) {
+		} catch (error) {
 			response += "\n";
 			response += "\n";
-			const sentence: string | undefined = JSON.parse(
-				JSON.parse(error.message).error.message
-			).error.message;
-
-			if (sentence) response += sentence;
+			response += "## The model is overloaded. Please try again later.";
+			console.log(error);
 			setModelReponse(response);
 		}
 
