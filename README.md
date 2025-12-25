@@ -1,4 +1,4 @@
-# Google Gemini Clone 
+# Google Gemini Clone
 
 A fully responsive **dark-themed Google Gemini clone** built with **React.js**, **TypeScript**, and **Tailwind CSS**, powered by the official **Gemini API (gemini-2.5-flash)**.  
 The application delivers a modern AI chat experience with multi-page navigation, chat management, and markdown-rendered AI responses.
@@ -53,10 +53,12 @@ The application delivers a modern AI chat experience with multi-page navigation,
 src/
 │── assets/ # Static assets and icons
 │── classes/
+|   └── Chats.class.tsx
 │── components/
 │── config/ # Gemini API integration
 │── context/ # Context API providers
 │── data/
+|   └── tools.json
 │── interfaces/
 │── libs/ # Helper functions
 │── pages/
