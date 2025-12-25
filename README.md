@@ -82,10 +82,10 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/gemini-ai-clone.git
+git clone https://github.com/Mahmoud46/google-gemini-clone-frontend.git
 
 # Navigate to the project directory
-cd gemini-ai-clone
+cd google-gemini-clone-frontend
 
 # Install dependencies
 npm install
