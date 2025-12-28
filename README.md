@@ -47,6 +47,12 @@ The application delivers a modern AI chat experience with multi-page navigation,
 
 ---
 
+## Demo
+
+![Demo](google-gemini-clone.gif)
+
+---
+
 ## 📁 Project Structure
 
 ```bash
